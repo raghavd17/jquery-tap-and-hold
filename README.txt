@@ -1,7 +1,7 @@
 jQuery - Tap and Hold
 =====================
 
-	This jQuery plugin lets you detect a tap and hould event on touch interfaces.
+	This jQuery plugin lets you detect a tap and hold event on touch interfaces.
 
 How to use it?
 
