@@ -14,7 +14,7 @@
  *  limitations under the License.
  * 
  *  @author Guido Marucci Blas - guido@zaubersoftware.com
- *  @description Adss a handler for a custom event 'taphold' that handles a
+ *  @description Adds a handler for a custom event 'taphold' that handles a
  *  tap and hold on touch interfaces.
  */
 (function($) {
@@ -44,8 +44,8 @@
         if (!e.touches || (e.targetTouches.length === 1 && e.touches.length === 1)) {
             startTapAndHoldDetector.call(this, event)
             var element = $(this);
-            originalBind.call(element, TOUCHMOVE, onTouchMove);
-            originalBind.call(element, TOUCHEND, onTouchEnd); 
+            element.bind(TOUCHMOVE, onTouchMove);
+            element.bind(TOUCHEND, onTouchEnd); 
         } else {
             stopTapAndHoldDetector.call(this);
         }   
